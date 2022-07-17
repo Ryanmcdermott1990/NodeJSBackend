@@ -1,3 +1,4 @@
+//Devlaring all neccessary dependencies / requirements
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -16,12 +17,13 @@ var corsOptions = {
 
 app.use(cors(corsOptions));
 
-// parse requests of content-type - application/json
+// Parse requests of content-type - application/json
 app.use(bodyParser.json());
 
-// parse requests of content-type - application/x-www-form-urlencoded
+// Parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
+//Put request to update tasls
 app.put("/tasks/:id", (req, res) => {
   let error = '';
   let success = false;
@@ -56,7 +58,7 @@ app.put("/tasks/:id", (req, res) => {
   }
 });
 
-// simple route
+// Retrieve tasks 
 app.get("/tasks", (req, res) => {
   try {
     return db.tasks.findAll()
@@ -71,6 +73,7 @@ app.get("/tasks", (req, res) => {
   }
 });
 
+//Create task
 app.post('/tasks', async  (req, res) => {
   let error = '';
   let success = false;
@@ -107,7 +110,7 @@ app.post('/tasks', async  (req, res) => {
   })
 })
 
-// set port, listen for requests
+// Listen on Port 8080 for new requests
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);

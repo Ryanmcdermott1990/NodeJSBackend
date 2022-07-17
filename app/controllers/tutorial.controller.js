@@ -1,3 +1,5 @@
+// Controller methods for interacting with the db 
+
 const db = require("../models");
 const Tasks = db.tasks;
 const Op = db.Sequelize.Op;

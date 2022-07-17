@@ -1,3 +1,5 @@
+//Tuttorial model 
+
 module.exports = (sequelize, Sequelize) => {
     const tasks = sequelize.define("task", {
       id: {

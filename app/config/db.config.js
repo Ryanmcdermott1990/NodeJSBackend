@@ -1,3 +1,5 @@
+// These are the configurations for connecting to the database
+
 module.exports = {
     HOST: "localhost",
     USER: "INSERT USERNAME",
