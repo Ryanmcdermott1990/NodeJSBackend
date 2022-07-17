@@ -2,7 +2,7 @@
 # NodeJS - Task Manager Backend 
 After completing the React Front end application, I decided that it would be a logicial progression to move to incorporating a NodeJS backend, this was done using a framework called Sequelize, which is an ORM to map requests sent from the front end to a SQL database. 
 
-- NodeJS Server syntax 
+- How to set up a NodeJS Server  
 - How to use Models to construct the parameters for each db field, assigning each applicable data type and set any rules on the fiels, (e.g. Not Null, Auto Increment etc..)
 - How to use Controllers to define methods on how to manipulate data
 - The process for building a full stack application 
