@@ -7,7 +7,7 @@ module.exports = (sequelize, Sequelize) => {
         primaryKey: true,
 
       },
-      description: {
+      desc: {
         type: Sequelize.STRING
       },
       date: {
